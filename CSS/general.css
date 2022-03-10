@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar
+{
     display: none;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-body {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+}
 
 body
 {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
     background-color: black;
     color: white;
     font-family: 'Fredoka', sans-serif;
@@ -20,6 +17,8 @@ body
 h1
 {
     margin-top: 3em;
+    text-align: justify;
+	text-justify: inter-word;
 }
 
 a
@@ -27,6 +26,32 @@ a
     text-decoration: none;
     color: white;
 }
+
+a[href^="tel:"]
+{ 
+	color: rgb(254, 167, 19);
+}
+
+a[href^="tel:"]:hover
+{
+	color: rgb(255, 225, 119);
+	transition: 0.3s;
+}
+
+img::-moz-selection
+{
+	background-color: rgb(255, 238, 0);
+}
+
+.image_RWD
+{
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+
 /* 
 @media only screen and (min-width: 200px)
 {
